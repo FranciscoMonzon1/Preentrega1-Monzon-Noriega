@@ -8,7 +8,7 @@ let dto = 0.2
 
 let adivinar = function () {
 while (intentos < 5) {
-    numero = parseInt(prompt(nombre + ', ingrese un numero entre el ' + min + ' y el '+ max))
+    numero = parseInt(prompt(nombre + ', para ganar tu descuento solo tienes que advinar el numero! Ingrese un numero entre el ' + min + ' y el '+ max))
 
     if (numero >= min && numero <= max) {
         if (numero < aleatorio) {
@@ -24,7 +24,7 @@ while (intentos < 5) {
 }
 
 if (numero == aleatorio) {
-    alert('Felicidades!! Lo adivinaste en tu intento n ' + (intentos + 1))
+    alert('Felicidades!! Lo adivinaste en tu intento n ' + (intentos + 1) + ', obtienes tu descuento!')
 } else {
     alert('Acabaste tus intentos, mejor suerte la proxima')
 }
